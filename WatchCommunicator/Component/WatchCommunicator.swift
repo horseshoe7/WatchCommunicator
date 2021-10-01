@@ -248,7 +248,7 @@ public class WatchCommunicator: NSObject {
     /// According to the documentation, for a WCSessionFile:
     /// `The system places downloaded files inside a temporary directory. If you intend to keep the file, it is your responsibility to move the file to a more permanent location inside your extension’s container directory. You must move the file before your session delegate’s session(_:didReceive:) method returns.`
     /// So by default, this will move the file to the caches folder
-    var fileMover: ((_ temporaryDownloadURL: URL) -> URL) = { tempURL in
+    var fileLocationMapper: ((_ temporaryDownloadURL: URL) -> URL) = { tempURL in
         
         let paths = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
         let cachesFolderURL = paths[0]
@@ -599,7 +599,7 @@ extension WatchCommunicator {
         
         // According to the documentation, you have to move the file before this method returns
 
-        let destinationURL = self.fileMover(file.fileURL)
+        let destinationURL = self.fileLocationMapper(file.fileURL)
         
         do {
             let fm = FileManager.default

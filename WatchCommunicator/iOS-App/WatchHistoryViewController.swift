@@ -43,14 +43,18 @@ class WatchHistoryViewController: UIViewController {
     @objc
     private func handleNotification(_ note: Notification) {
         
+        // note, the incoming message gets generally handled by the WatchCommunicator's .messageHandler
+        // but if you need to do something specific with it...
+        
         guard let communicator = note.object as? WatchCommunicator else {
             logger.error("Expected the notification's object to be a WatchCommunicator")
             return
         }
         if let message = note.userInfo?[UserInfoKeyMessage] as? WatchCommunicatorMessage {
-            
+            // do something with the message
         }
         
+        // in this case we are interested in showing the messageHistory
         self.reloadTableData(messages: communicator.messageHistory)
     }
     
@@ -72,11 +76,7 @@ class WatchHistoryViewController: UIViewController {
                 switch result {
                 case .success(let responseMessage):
                     break // now you tap on the cell to view the log.
-//                    if let fileURL = responseMessage?.fileURL {
-//                        if let contents = try? String(contentsOf: fileURL) {
-//                            self.textView.text = contents
-//                        }
-//                    }
+
                 case .failure(let error):
                     logger.error("Failed getting the logs: \(String(describing: error))")
                 }
@@ -120,11 +120,14 @@ class WatchHistoryViewController: UIViewController {
             logger.error("Could not get the AppDelegate for some weird reason")
             return
         }
+        
         var message = WatchCommunicatorMessage.response(toMessageId: nil, responseType: .fileTransfer, contentType: .imageFile, userInfo: [:], jsonData: nil)
         message.fileURL = imageURL
         
+        // a 'response' with no reference messageId is considered a 'notification' message,
+        // but under the hood it's just a response... i.e. it doesn't require a response
+        // whereas a request requires a response.
         delegate.communicator.sendResponseMessage(message)
-
     }
 }
 
@@ -166,6 +169,7 @@ class MessageHistoryCell: UITableViewCell {
     @IBOutlet weak var timestampLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     
+    // it's more a convenience to bind the view model to the cell
     var viewModel: WatchHistoryItemViewModel?
     
     override func awakeFromNib() {

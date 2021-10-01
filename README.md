@@ -10,7 +10,7 @@ This framework aims to make it straightforward to get data from point A to point
 - Easy to use (says the Author...)
 - Request / Response / Push approach has been realized. 
 - Block-based API for handling responses, regardless of whether you've sent your message via the `WCSession` methods that will only work when the device is reachable.
-- Prefers the fastest route of delivery (whether via messageData, applicationContext, or userInfo transfer)
+- Prefers the fastest route of delivery (whether via messageData, applicationContext, userInfoTransfer, or complicationUserInfoTransfer)
 - Straightforward File transfers
 - Receive receipts are echoed back for any non-request.
 
@@ -18,7 +18,7 @@ This framework aims to make it straightforward to get data from point A to point
 
 ## Principles
 
-Application Context as you knew it is now different.  All data sent and received via a `WCSession` will now be wrapped in a `WatchCommunicatorMessage` type, so there's a standardized format to exchange data.  
+Application Context as you knew it is now different.  All data sent and received via a `WCSession` will now be wrapped in a `WatchCommunicatorMessage` type, so there's a standardized format to exchange data.  That said, if a `WatchCommunicatorMessage`'s `responseType` is `.applicationContext`, the typical assumptions about `WCSession` are valid; `WatchCommunicator` has the properties  `applicationContextMessage` and `receivedApplicationContextMessage` that are analogous to `applicationContext` and `receivedApplicationContext` on `WCSession` and work in the same way.
 
 
 
@@ -44,13 +44,15 @@ Since a `WatchCommunicatorMessage` can essentially be 1 of 3 types (a request fo
 
 See both the `AppDelegate.swift` and the `ExtensionDelegate.swift` implementations in the demo project for how one sets up a `WatchCommunicator` instance.
 
+Note, you are responsible for managing thread safety here.  (See suggestions for future work below)
+
 ### Context Accessor
 
-Perhaps you need to refresh your watch's state.  Wouldn't it be nice to remain in a 'server-client' mindset?  This is where you could ask the counterpart device for its current context via a `WatchCommunicatorMessage` of `.responseType = .applicationContext`.  But what if you've never sent that before?  By configuring a `applicationContextAccessor` block, whenever the `WatchCommunicator` receives a request for the `applicationContext`, this information can always be sent back to the device requesting it.
+Perhaps you need to refresh your watch's state.  Wouldn't it be nice to remain in a 'server-client' mindset (with completion blocks)?  This is where you could ask the counterpart device for its current context via a `WatchCommunicatorMessage` of `.responseType = .applicationContext`.  But what if you've never sent that before?  By configuring a `applicationContextAccessor` block, whenever the `WatchCommunicator` receives a request for the `applicationContext`, this information can always be sent back to the device requesting it.
 
-### File Mover
+### File Location Mapper
 
-By default, whenever a file transfer completes, the file will be moved to a location in the user's caches folder.  You can modify this behaviour by providing an implementation for the `.fileMover` property.
+By default, whenever a file transfer completes, the file will be moved to a location in the user's caches folder.  You can modify this behaviour by providing an implementation for the `.fileLocationMapper` property.
 
 ### Reachability Monitoring
 
@@ -84,6 +86,7 @@ let appCtxMessage = WatchCommunicatorMessage.response(toMessageId: nil,
 
 ### Request Current Context / Some Data
 
+TODO:  Complete this section.
 
 
 
