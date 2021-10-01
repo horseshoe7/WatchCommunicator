@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BoH-Rd-eD0">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchCommunicator_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="dOX-2e-mJo">
+                            <items>
+                                <button width="1" alignment="left" title="Button One" id="Fc3-6M-fpl">
+                                    <connections>
+                                        <action selector="pressedButtonOne" destination="AgC-eL-Hgc" id="beE-py-wk0"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Button Two" id="0gg-sn-Apb">
+                                    <connections>
+                                        <action selector="pressedButtonTwo" destination="AgC-eL-Hgc" id="U0r-Rm-wk7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonOne" destination="Fc3-6M-fpl" id="yd5-gg-uoX"/>
+                        <outlet property="buttonTwo" destination="0gg-sn-Apb" id="Bdz-UM-Uks"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-14" y="8"/>
+        </scene>
+        <!--LogInterfaceController-->
+        <scene sceneID="uKJ-B9-WZt">
+            <objects>
+                <controller identifier="LogInterfaceController" id="BoH-Rd-eD0" customClass="LogInterfaceController" customModule="WatchCommunicator_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="20" alignment="center" title="Reachable" enabled="NO" id="glt-xD-kLK">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.0" green="0.48853603950000002" blue="0.15945433489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="center" title="Send" id="eBK-DF-Wie">
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="didPressSendButton" destination="BoH-Rd-eD0" id="UDJ-mV-fd8"/>
+                                <segue destination="SJN-qg-5d7" kind="push" id="gch-p2-PA6"/>
+                            </connections>
+                        </button>
+                        <table alignment="center" id="l2c-LD-hOH">
+                            <items>
+                                <tableRow identifier="TextDisplayCell_Outgoing" id="XuQ-Lx-mKD" customClass="TextRowController" customModule="WatchCommunicator_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="9yR-LG-g50">
+                                        <items>
+                                            <group width="1" alignment="left" id="BkU-hP-z6l">
+                                                <items>
+                                                    <label alignment="left" text="⌚️" id="BGJ-lR-dfe"/>
+                                                    <label alignment="left" text="[Timestamp]" id="LUW-Vh-6t4">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label width="1" alignment="left" verticalAlignment="bottom" text="[MessageContent]" textAlignment="left" numberOfLines="3" id="ua3-3R-Qc4">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.2029760078361027" green="0.2029760078361027" blue="0.2029760078361027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="platformOriginLabel" destination="BGJ-lR-dfe" id="yb8-2C-G42"/>
+                                        <outlet property="textLabel" destination="ua3-3R-Qc4" id="Vpf-Ra-yB6"/>
+                                        <outlet property="timestampLabel" destination="LUW-Vh-6t4" id="ubP-5L-0ft"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="TextDisplayCell_Incoming" id="fvb-jv-VkO" customClass="TextRowController" customModule="WatchCommunicator_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="O8y-NC-HNn">
+                                        <items>
+                                            <group width="1" alignment="left" id="l17-6y-f0X">
+                                                <items>
+                                                    <label alignment="left" text="⌚️" id="4hW-de-YND"/>
+                                                    <label alignment="left" text="[Timestamp]" id="wDG-XI-Xnq">
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label width="1" alignment="left" verticalAlignment="bottom" text="[MessageContent]" textAlignment="left" numberOfLines="3" id="3at-sx-S3O">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.099860799276576651" green="0.099860799276576651" blue="0.099860799276576651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="platformOriginLabel" destination="4hW-de-YND" id="xUb-Xg-AeK"/>
+                                        <outlet property="textLabel" destination="3at-sx-S3O" id="aUi-Me-RRK"/>
+                                        <outlet property="timestampLabel" destination="wDG-XI-Xnq" id="5k0-Oc-GYz"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="ImageDisplayCell" id="AtQ-Hk-tMY" customClass="ImageRowController" customModule="WatchCommunicator_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="GWd-gN-1VG">
+                                        <items>
+                                            <group width="1" alignment="left" id="6xI-kl-z8h">
+                                                <items>
+                                                    <label alignment="left" text="⌚️" id="5as-vU-2gE"/>
+                                                    <label alignment="left" text="[Timestamp]" id="g5o-1G-rb3">
+                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <imageView width="1" height="55" alignment="left" image="rectangle" catalog="system" contentMode="scaleAspectFit" id="0vM-Lw-vky">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label width="1" alignment="center" verticalAlignment="bottom" text="[Caption]" textAlignment="center" id="ZAD-Bz-fUj">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="captionLabel" destination="ZAD-Bz-fUj" id="B19-zy-Oz9"/>
+                                        <outlet property="image" destination="0vM-Lw-vky" id="hCg-i6-38H"/>
+                                        <outlet property="platformOriginLabel" destination="5as-vU-2gE" id="PgP-7H-zdO"/>
+                                        <outlet property="timestampLabel" destination="g5o-1G-rb3" id="wY1-Ec-4n3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="reachabilityButton" destination="glt-xD-kLK" id="8Nw-BY-Hdb"/>
+                        <outlet property="sendButton" destination="eBK-DF-Wie" id="sIA-tu-pZB"/>
+                        <outlet property="table" destination="l2c-LD-hOH" id="hMq-OY-Ee3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="324" y="9"/>
+        </scene>
+        <!--Send...-->
+        <scene sceneID="mGQ-gj-N1h">
+            <objects>
+                <controller identifier="SendMessageInterfaceController" title="Send..." id="SJN-qg-5d7" customClass="SendMessageInterfaceController" customModule="WatchCommunicator_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Send AppCtx" id="vdi-Jk-J9l">
+                            <connections>
+                                <action selector="didPressSendContext" destination="SJN-qg-5d7" id="REd-wR-qa1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Req: AppCtx" id="8z0-JO-mB5">
+                            <connections>
+                                <action selector="didPressRequestContext" destination="SJN-qg-5d7" id="lsw-3c-hQC"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Remote Log File" id="rjb-qu-CM1">
+                            <connections>
+                                <action selector="didPressSendLogFile" destination="SJN-qg-5d7" id="fN5-KU-9FN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Image File" id="8oK-Fw-czD">
+                            <connections>
+                                <action selector="didPressSendImage" destination="SJN-qg-5d7" id="OMM-YX-FAf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Simple Message" id="jEe-MS-5JJ">
+                            <connections>
+                                <action selector="didPressSendSimpleMessage" destination="SJN-qg-5d7" id="geF-4N-Nos"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="612" y="9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rectangle" catalog="system" width="128" height="91"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

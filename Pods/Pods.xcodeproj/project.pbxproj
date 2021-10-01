@@ -1,0 +1,1673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A3A3FB3718EC8271F79496D87257EFC /* FilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4F74F76649E56AC73C82AE92B8EFC0 /* FilterProtocol.swift */; };
+		0D4F7C22285463A3853162721DA43515 /* FileNameFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E625043F131B291076F9D071C27B1 /* FileNameFilter.swift */; };
+		14E2247908705AE03FB9D859B0DD034A /* BaseQueuedDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656211EAF04C882BA6737AB9252DB025 /* BaseQueuedDestination.swift */; };
+		1AFF89AF59A0C808F346394BD9C0F239 /* Pods-WatchCommunicator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC1C3E6349CEBAE4B0793E630FCD0BE /* Pods-WatchCommunicator-dummy.m */; };
+		1CAA0C760918DD1CC7A9B0B32AAA95EC /* Pods-WatchCommunicator WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0CB850EE40E61887CB06290F8D4BDA /* Pods-WatchCommunicator WatchKit Extension-dummy.m */; };
+		1FD5AC673A03F14769ADC475F762DD22 /* AutoRotatingFileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE25D7D9282ACA452303425E21A93B2 /* AutoRotatingFileDestination.swift */; };
+		201A17FB18744AD036C0E79443DB498B /* TagFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9964D02C358740466C86978C3C57294 /* TagFilter.swift */; };
+		2058BFA9B0C260E2077903555E40D81D /* TestDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281AD8621002B694091834B55F50CC8 /* TestDestination.swift */; };
+		22CEC5027832D9B26E3949C4F91686F6 /* XCGLogger-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 688ED5C12D9CDF93FF5ED0191E3D742E /* XCGLogger-watchOS-dummy.m */; };
+		26D8527D67CF36B95749F231A7BAD339 /* UserInfoFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7FEC71ABEF26CC5C9642FC1FFFB8EC /* UserInfoFilter.swift */; };
+		2BA88FFF6005F7BA2F90B5F5AF3AA286 /* AppleSystemLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587938E792A0C7D50D20A4418E17AEF /* AppleSystemLogDestination.swift */; };
+		2DC121E53988165690A7A9EED0577F6A /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = DB90DFBDCF0ADCD97DF1E9192C117D83 /* .swift-version */; };
+		37C42902C7F322D8DCF1A3CF9C1EE4DC /* Pods-WatchCommunicatorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C75B8A32C15E5FB1D8C6F7716565C2E6 /* Pods-WatchCommunicatorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		391F3AFA27716AB3A352A95F172F153B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33348ACCBF2DFB97634B6AB9164E557A /* Foundation.framework */; };
+		3BE4A6A4264C02BD77111F49B88E225F /* XcodeColorsLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D933CDBE0090FC51E2BA2A6B1B60C /* XcodeColorsLogFormatter.swift */; };
+		3D140A8BDB2508AE49B5EE6D3D9B3383 /* AutoRotatingFileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE25D7D9282ACA452303425E21A93B2 /* AutoRotatingFileDestination.swift */; };
+		4024A69DA2944777FE30C963E29D6884 /* XCGLogger-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F645C22B5C8D327B409313E2CE41050 /* XCGLogger-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41FE45B0F8631EB6E0880398FC8C8980 /* FileNameFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E625043F131B291076F9D071C27B1 /* FileNameFilter.swift */; };
+		439E69E1D538F2F53AC95E16FA285E46 /* ANSIColorLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03443D73A489786C7573559F1E3FD22 /* ANSIColorLogFormatter.swift */; };
+		44A6AB8164D28F452CBB39FD93C1B5BB /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = DB90DFBDCF0ADCD97DF1E9192C117D83 /* .swift-version */; };
+		450E6E35C820DB8A0D2B28E8C420EACB /* ObjcExceptionBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFB664CF5AA41591C31BD9BC125FCD2 /* ObjcExceptionBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46E607F8CDBEAED0E7B0D235D7C558DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1062EB83FE4BA7A14899A766A2703DF4 /* Foundation.framework */; };
+		4766F40BED4AAFFF781EC19551F0BAF1 /* LogDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABE2CECDC721B625E1C73AB27AFFAB /* LogDetails.swift */; };
+		48D0B0D308F0E007F9269BCA1446A4D6 /* Pods-WatchCommunicator WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87350FAD5659301E6D73FCF0D1D8B5D8 /* Pods-WatchCommunicator WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C463EC4ED1AC4078EB6CBF40AD7B4D7 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0828364ACC5DD5CB57F82D0087625D9B /* HelperFunctions.swift */; };
+		4ECBCD4601329B8154F8A236DD131AB4 /* Pods-WatchCommunicator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B97D3E006ED929489364BFEE5ADDFB /* Pods-WatchCommunicator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		503AA079427B5FBA0D3F4465C092786F /* ObjcExceptionBridging-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F07D5FF1855ECA0EEB770C1D96340F65 /* ObjcExceptionBridging-iOS-dummy.m */; };
+		515C9EDA1EF30D1F769E28AF00825E99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1062EB83FE4BA7A14899A766A2703DF4 /* Foundation.framework */; };
+		5D1DFA6C7380CBE7E764383725B966E5 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF58A7F783C47BC9AC0E6749A0CABD /* BaseDestination.swift */; };
+		5E0C2C1AF4903928939DDD3786F8B39B /* PrePostFixLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29A92FCE7CA4B3AE2E2CE8977AC979 /* PrePostFixLogFormatter.swift */; };
+		6257F272BE9E0D28ECF35BC5878D2AB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33348ACCBF2DFB97634B6AB9164E557A /* Foundation.framework */; };
+		6468405C319F0B3B0498D178B3E5BF11 /* ANSIColorLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03443D73A489786C7573559F1E3FD22 /* ANSIColorLogFormatter.swift */; };
+		6499778ABC5E77F83C63EA320F61DF1F /* Base64LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3975FE372D0DBBB3EEE951232F6098A /* Base64LogFormatter.swift */; };
+		6A60FB759CAE9E80F7CEDB2CBB9FFEB0 /* DevFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E09CE22648D0E3348345363DF6B5B /* DevFilter.swift */; };
+		709A6FB7D640477ECD912E8968A87324 /* XCGLogger-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 486FAC5BA63DBBA9DA7BA40A3928AB4D /* XCGLogger-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		717664F60399E94CE289C1C8ABF04661 /* LogFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1610997BBD9E7556176B8C1500494 /* LogFormatterProtocol.swift */; };
+		72828BEC90591BA462AECC9C998DDD62 /* ObjcExceptionBridging-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4108276DFDDBBDFBD0ADF4AE757F62C0 /* ObjcExceptionBridging-watchOS-dummy.m */; };
+		72F3C28796CC1D3328BDD48634D3976B /* TestDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7281AD8621002B694091834B55F50CC8 /* TestDestination.swift */; };
+		7831CA0421B5A8BD76153BE0F87D2005 /* AppleSystemLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3587938E792A0C7D50D20A4418E17AEF /* AppleSystemLogDestination.swift */; };
+		7EB45938CD5E469ED474BC905E0C6CFB /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D7B1FB23010D2572423A5738F73B3C /* XCGLogger.swift */; };
+		7FA2E2E8C433A775A4E4057FEE0559DA /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06266A12CD4CE34A0A452719F31B253 /* ObjcExceptionBridging.framework */; };
+		83E99FF0D214E4CE43DED2BF7DED7339 /* DestinationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90493486CDC7418D0F8BC7CA2D4DD05 /* DestinationProtocol.swift */; };
+		843C049D1987610A66191979B5498481 /* XcodeColorsLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18D933CDBE0090FC51E2BA2A6B1B60C /* XcodeColorsLogFormatter.swift */; };
+		870876E0242EF30C7D8E90E8F17A85B9 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06266A12CD4CE34A0A452719F31B253 /* ObjcExceptionBridging.framework */; };
+		8A857736A4B06DAFA3C79D1356F188DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1062EB83FE4BA7A14899A766A2703DF4 /* Foundation.framework */; };
+		8CE3FF5E8955C2FDF33B1A2C90767E9E /* ObjcExceptionBridging-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63195C5B2B40EC62E52C9326513DB61A /* ObjcExceptionBridging-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DF31102D0FD77FD40BF14C17FDCEC4A /* FilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4F74F76649E56AC73C82AE92B8EFC0 /* FilterProtocol.swift */; };
+		8EA9C090D47CE7C235AB6942F83BA70B /* ObjectiveCMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = D658C01DDE714F750EBED14BB006DD27 /* ObjectiveCMarker.m */; };
+		8FB0F9B9D4ADC3CD67F94A6ACFA00B97 /* PrePostFixLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29A92FCE7CA4B3AE2E2CE8977AC979 /* PrePostFixLogFormatter.swift */; };
+		9262C72B75067EF494083FD966A26787 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809EBE9FB819A6445A55FFB7757E4E5 /* FileDestination.swift */; };
+		979993B9118670333169F2F388230BD9 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF58A7F783C47BC9AC0E6749A0CABD /* BaseDestination.swift */; };
+		98416192887B3F802BAFDD84322F9F14 /* LogFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1610997BBD9E7556176B8C1500494 /* LogFormatterProtocol.swift */; };
+		9BA632CD3D8C056D7072241F1F441852 /* DestinationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90493486CDC7418D0F8BC7CA2D4DD05 /* DestinationProtocol.swift */; };
+		9EA160E731940C89AC964E843F081D81 /* UserInfoFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7FEC71ABEF26CC5C9642FC1FFFB8EC /* UserInfoFilter.swift */; };
+		9EE0CE52D6C2DAC414890B325E0A5B55 /* DevFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E09CE22648D0E3348345363DF6B5B /* DevFilter.swift */; };
+		A4DBA37463E04D6BA8DFEE09901472F6 /* ObjcExceptionBridging-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70648BC4D509B6C605A7BBEB90571D62 /* ObjcExceptionBridging-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA809971DA0B8D3C2308C6D8A8A57DC5 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1AD9D449607489CB179D82DACAB50 /* ConsoleDestination.swift */; };
+		B47A9B39B010C1A453067DF9D033C202 /* ObjcExceptionBridging.h in Headers */ = {isa = PBXBuildFile; fileRef = BDFB664CF5AA41591C31BD9BC125FCD2 /* ObjcExceptionBridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6A6818818FBF47CE02994C6F2EB5E89 /* LogDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABE2CECDC721B625E1C73AB27AFFAB /* LogDetails.swift */; };
+		C102F54205ED8D4B73C3458E4A025293 /* DispatchQueue+XCGAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367EF0BCA9AFD01CADE56FB8C6967E9 /* DispatchQueue+XCGAdditions.swift */; };
+		C470C84EC8D751B7B8FD1BA7CF4A6CF0 /* ObjectiveCMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = D658C01DDE714F750EBED14BB006DD27 /* ObjectiveCMarker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C72D2152AC0B9AD3B3739C896621A58F /* Pods-WatchCommunicatorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30976DC2145228C73F9A6CCA975BD2C1 /* Pods-WatchCommunicatorTests-dummy.m */; };
+		C796A58CDAB30C531FE468741E65FFBE /* DispatchQueue+XCGAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3367EF0BCA9AFD01CADE56FB8C6967E9 /* DispatchQueue+XCGAdditions.swift */; };
+		C8623C5D24EE8F8637A0DBC207BB95BF /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809EBE9FB819A6445A55FFB7757E4E5 /* FileDestination.swift */; };
+		C8BAE28E55CC48F1235DA1C4FBB724C0 /* BaseQueuedDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656211EAF04C882BA6737AB9252DB025 /* BaseQueuedDestination.swift */; };
+		CB34CA1A599BDE5A524CF3E11B356679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1062EB83FE4BA7A14899A766A2703DF4 /* Foundation.framework */; };
+		CFE4F7DC4DEE2BF2595E705A970B482D /* XCGLogger-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D2ADF44096085F2DCC361AAF6269D /* XCGLogger-iOS-dummy.m */; };
+		D0D8767F8944F78A722BCB5D2FE9D831 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0828364ACC5DD5CB57F82D0087625D9B /* HelperFunctions.swift */; };
+		D5BBA53505C5D47BBF0471559AD83830 /* URL+XCGAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EF67761C2442792F4CC21E48E9357 /* URL+XCGAdditions.swift */; };
+		E0885056DA568606472A9D096D7CD97F /* TagFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9964D02C358740466C86978C3C57294 /* TagFilter.swift */; };
+		E47FF81FE0769BDDB6A4B9B964F73096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33348ACCBF2DFB97634B6AB9164E557A /* Foundation.framework */; };
+		E4E60E78AA541F0D2618651D507F617F /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D7B1FB23010D2572423A5738F73B3C /* XCGLogger.swift */; };
+		E90DF4236D0784684A356699CDACE948 /* Base64LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3975FE372D0DBBB3EEE951232F6098A /* Base64LogFormatter.swift */; };
+		E94269575B0C9E29AF2EF910997939BF /* URL+XCGAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EF67761C2442792F4CC21E48E9357 /* URL+XCGAdditions.swift */; };
+		F5231310FD6D1B547D405B0D1EF9FB05 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F1AD9D449607489CB179D82DACAB50 /* ConsoleDestination.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13C84DA984C77F41103215652D7EEED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D94B634100CAE0F33E40E5ED1D68861;
+			remoteInfo = "XCGLogger-watchOS";
+		};
+		4D3E0F6095D4106A8386139D8DD1A440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01944EEBB25479D57F9107F178A3DB12;
+			remoteInfo = "Pods-WatchCommunicator";
+		};
+		855C189866E82B1FCBBD36BA252421A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 561E34D43E5F287C1307C6F7AEA4781E;
+			remoteInfo = "ObjcExceptionBridging-iOS";
+		};
+		D701246D13C9643E5473A3F333F3BC3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 782428077BA9EE10A546CAADD5C4560D;
+			remoteInfo = "ObjcExceptionBridging-watchOS";
+		};
+		E3461A60F467479CAC560368E1F21CC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 561E34D43E5F287C1307C6F7AEA4781E;
+			remoteInfo = "ObjcExceptionBridging-iOS";
+		};
+		EC6A0C1CD2D2E8FD73EDC970A7105739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 782428077BA9EE10A546CAADD5C4560D;
+			remoteInfo = "ObjcExceptionBridging-watchOS";
+		};
+		FCB81AEDF3C04519B65BB001EB12112A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D50E171D729A216CE7335A7B375CE67A;
+			remoteInfo = "XCGLogger-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01827F86B1AD3897923915E654C40791 /* Pods-WatchCommunicator WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchCommunicator WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		02D7B1FB23010D2572423A5738F73B3C /* XCGLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = Sources/XCGLogger/XCGLogger.swift; sourceTree = "<group>"; };
+		072F9BF8F613A7BFCD0D4C3D268FF491 /* Pods-WatchCommunicatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchCommunicatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0828364ACC5DD5CB57F82D0087625D9B /* HelperFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HelperFunctions.swift; path = Sources/XCGLogger/Misc/HelperFunctions.swift; sourceTree = "<group>"; };
+		09492AE9E7B49C44DD21A0847073D47D /* Pods-WatchCommunicatorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchCommunicatorTests.modulemap"; sourceTree = "<group>"; };
+		0DB47FE3465B53ABAFA9C4492C6053CE /* Pods-WatchCommunicator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchCommunicator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1062EB83FE4BA7A14899A766A2703DF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		110D5D37BEABBB6EE46E250F3FC9D0BD /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCGLogger.framework; path = "XCGLogger-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		142D9488380264829C992D4C0B1ACB99 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjcExceptionBridging.framework; path = "ObjcExceptionBridging-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A238ACB715D4FDEDC07C0A6ECDF3AD0 /* Pods-WatchCommunicator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchCommunicator-acknowledgements.plist"; sourceTree = "<group>"; };
+		216D2ADF44096085F2DCC361AAF6269D /* XCGLogger-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCGLogger-iOS-dummy.m"; sourceTree = "<group>"; };
+		2BFF58A7F783C47BC9AC0E6749A0CABD /* BaseDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDestination.swift; path = Sources/XCGLogger/Destinations/BaseDestination.swift; sourceTree = "<group>"; };
+		2CE25D7D9282ACA452303425E21A93B2 /* AutoRotatingFileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoRotatingFileDestination.swift; path = Sources/XCGLogger/Destinations/AutoRotatingFileDestination.swift; sourceTree = "<group>"; };
+		2CEEDAA6D4EA39AD5B531D34D4ADB005 /* ObjcExceptionBridging-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ObjcExceptionBridging-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2E0CB850EE40E61887CB06290F8D4BDA /* Pods-WatchCommunicator WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchCommunicator WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		2F645C22B5C8D327B409313E2CE41050 /* XCGLogger-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-iOS-umbrella.h"; sourceTree = "<group>"; };
+		3055AD6D0C9D4CE6C7BF80F2489BC25A /* XCGLogger-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCGLogger-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		308F7D63607095CA8959BBCD46BCA747 /* Pods_WatchCommunicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatchCommunicator.framework; path = "Pods-WatchCommunicator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30976DC2145228C73F9A6CCA975BD2C1 /* Pods-WatchCommunicatorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchCommunicatorTests-dummy.m"; sourceTree = "<group>"; };
+		327E625043F131B291076F9D071C27B1 /* FileNameFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileNameFilter.swift; path = Sources/XCGLogger/Filters/FileNameFilter.swift; sourceTree = "<group>"; };
+		33348ACCBF2DFB97634B6AB9164E557A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3367EF0BCA9AFD01CADE56FB8C6967E9 /* DispatchQueue+XCGAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+XCGAdditions.swift"; path = "Sources/XCGLogger/Extensions/DispatchQueue+XCGAdditions.swift"; sourceTree = "<group>"; };
+		3587938E792A0C7D50D20A4418E17AEF /* AppleSystemLogDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleSystemLogDestination.swift; path = Sources/XCGLogger/Destinations/AppleSystemLogDestination.swift; sourceTree = "<group>"; };
+		3D1F73F4107F42753987AA8741E84936 /* Pods_WatchCommunicatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatchCommunicatorTests.framework; path = "Pods-WatchCommunicatorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4108276DFDDBBDFBD0ADF4AE757F62C0 /* ObjcExceptionBridging-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ObjcExceptionBridging-watchOS-dummy.m"; path = "../ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-dummy.m"; sourceTree = "<group>"; };
+		486FAC5BA63DBBA9DA7BA40A3928AB4D /* XCGLogger-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCGLogger-watchOS-umbrella.h"; path = "../XCGLogger-watchOS/XCGLogger-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		4A3E09CE22648D0E3348345363DF6B5B /* DevFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DevFilter.swift; path = Sources/XCGLogger/Filters/DevFilter.swift; sourceTree = "<group>"; };
+		4D7FEC71ABEF26CC5C9642FC1FFFB8EC /* UserInfoFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfoFilter.swift; path = Sources/XCGLogger/Filters/UserInfoFilter.swift; sourceTree = "<group>"; };
+		4F2C0D03D5B6F0F00880DB24EADA4D3F /* ObjcExceptionBridging-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ObjcExceptionBridging-watchOS-Info.plist"; path = "../ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-Info.plist"; sourceTree = "<group>"; };
+		5294C54DD88C0C7A8C919FEC989111CB /* Pods-WatchCommunicator WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchCommunicator WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		59ACDFB91792808666B7DF4966D0B848 /* XCGLogger-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "XCGLogger-iOS.modulemap"; sourceTree = "<group>"; };
+		5DDBE9DD3AD67E3BDEB77D4E75F3EF50 /* ObjcExceptionBridging-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ObjcExceptionBridging-watchOS.debug.xcconfig"; path = "../ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6269D0B0573ABA6EF659C14B29C82D0C /* Pods-WatchCommunicator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchCommunicator.debug.xcconfig"; sourceTree = "<group>"; };
+		63195C5B2B40EC62E52C9326513DB61A /* ObjcExceptionBridging-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjcExceptionBridging-iOS-umbrella.h"; sourceTree = "<group>"; };
+		656211EAF04C882BA6737AB9252DB025 /* BaseQueuedDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseQueuedDestination.swift; path = Sources/XCGLogger/Destinations/BaseQueuedDestination.swift; sourceTree = "<group>"; };
+		65FA2A5551635A52EDBC515711916B75 /* ObjcExceptionBridging-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ObjcExceptionBridging-watchOS-prefix.pch"; path = "../ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		6809EBE9FB819A6445A55FFB7757E4E5 /* FileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = Sources/XCGLogger/Destinations/FileDestination.swift; sourceTree = "<group>"; };
+		688ED5C12D9CDF93FF5ED0191E3D742E /* XCGLogger-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCGLogger-watchOS-dummy.m"; path = "../XCGLogger-watchOS/XCGLogger-watchOS-dummy.m"; sourceTree = "<group>"; };
+		6AEA7851D70E8AFE780327C53A1EB058 /* Pods-WatchCommunicator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchCommunicator-frameworks.sh"; sourceTree = "<group>"; };
+		6D4F74F76649E56AC73C82AE92B8EFC0 /* FilterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterProtocol.swift; path = Sources/XCGLogger/Filters/FilterProtocol.swift; sourceTree = "<group>"; };
+		70648BC4D509B6C605A7BBEB90571D62 /* ObjcExceptionBridging-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ObjcExceptionBridging-watchOS-umbrella.h"; path = "../ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		7281AD8621002B694091834B55F50CC8 /* TestDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TestDestination.swift; path = Sources/XCGLogger/Destinations/TestDestination.swift; sourceTree = "<group>"; };
+		73682A6FA713DEBF2F19BBF81A938EC3 /* ObjcExceptionBridging-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "ObjcExceptionBridging-watchOS.release.xcconfig"; path = "../ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		73AC4C622E1B658D036A2978E218806D /* XCGLogger-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "XCGLogger-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		76E25487CF31E4D60AC21F5012BFF0C9 /* XCGLogger-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "XCGLogger-watchOS.debug.xcconfig"; path = "../XCGLogger-watchOS/XCGLogger-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7C8FC2D0ECBBF0EE3537B5B08274FC5D /* Pods-WatchCommunicator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchCommunicator.release.xcconfig"; sourceTree = "<group>"; };
+		7F29A92FCE7CA4B3AE2E2CE8977AC979 /* PrePostFixLogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrePostFixLogFormatter.swift; path = Sources/XCGLogger/LogFormatters/PrePostFixLogFormatter.swift; sourceTree = "<group>"; };
+		7FD8BAA8BD5EA592B4DA448F3EA2D6FA /* Pods-WatchCommunicatorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchCommunicatorTests-Info.plist"; sourceTree = "<group>"; };
+		82E36B4FBBB08055714454E0C2E1F8F8 /* Pods-WatchCommunicator WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchCommunicator WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		8442D41F79B3A9F1378D2E2ADE6EDE19 /* ObjcExceptionBridging-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ObjcExceptionBridging-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		84858D2C1F7E4E57D49C582D7FD3FBCB /* ObjcExceptionBridging-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "ObjcExceptionBridging-watchOS.modulemap"; path = "../ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS.modulemap"; sourceTree = "<group>"; };
+		87350FAD5659301E6D73FCF0D1D8B5D8 /* Pods-WatchCommunicator WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchCommunicator WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		8B9768ACCA0CAED20CC38603D5DE6A91 /* Pods-WatchCommunicator WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchCommunicator WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9224FD50E3EC906E6F12D27CBF2D7B26 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjcExceptionBridging.framework; path = "ObjcExceptionBridging-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94734F6E4B95A30AC24F5841BE31EEAB /* ObjcExceptionBridging-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjcExceptionBridging-iOS-Info.plist"; sourceTree = "<group>"; };
+		9CC209BF370C023C78EC3F3DD394715F /* XCGLogger-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "XCGLogger-watchOS.modulemap"; path = "../XCGLogger-watchOS/XCGLogger-watchOS.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD1610997BBD9E7556176B8C1500494 /* LogFormatterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogFormatterProtocol.swift; path = Sources/XCGLogger/LogFormatters/LogFormatterProtocol.swift; sourceTree = "<group>"; };
+		A18D933CDBE0090FC51E2BA2A6B1B60C /* XcodeColorsLogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XcodeColorsLogFormatter.swift; path = Sources/XCGLogger/LogFormatters/XcodeColorsLogFormatter.swift; sourceTree = "<group>"; };
+		A4295D124F9971C5B4F55AD9459B8C5C /* Pods-WatchCommunicator WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchCommunicator WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		A429C24465D05090E6E33FCD4277B438 /* XCGLogger-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "XCGLogger-watchOS.release.xcconfig"; path = "../XCGLogger-watchOS/XCGLogger-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		A942633A0B922D05280E3E2FA26B3610 /* Pods-WatchCommunicator WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WatchCommunicator WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		AB90677F2C93C0359978AA3568F7ABCC /* Pods-WatchCommunicatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WatchCommunicatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABC1C3E6349CEBAE4B0793E630FCD0BE /* Pods-WatchCommunicator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WatchCommunicator-dummy.m"; sourceTree = "<group>"; };
+		AD9EF67761C2442792F4CC21E48E9357 /* URL+XCGAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+XCGAdditions.swift"; path = "Sources/XCGLogger/Extensions/URL+XCGAdditions.swift"; sourceTree = "<group>"; };
+		B230367821B777ED1260A4ED3DEB0521 /* ObjcExceptionBridging-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjcExceptionBridging-iOS-prefix.pch"; sourceTree = "<group>"; };
+		B90493486CDC7418D0F8BC7CA2D4DD05 /* DestinationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DestinationProtocol.swift; path = Sources/XCGLogger/Destinations/DestinationProtocol.swift; sourceTree = "<group>"; };
+		B9964D02C358740466C86978C3C57294 /* TagFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagFilter.swift; path = Sources/XCGLogger/Filters/TagFilter.swift; sourceTree = "<group>"; };
+		BAC59308E249B7EEB57E6FDD8C653EE5 /* XCGLogger-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XCGLogger-iOS-Info.plist"; sourceTree = "<group>"; };
+		BCB125C9A6E87F292D66D88C0C302B7A /* XCGLogger-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-iOS-prefix.pch"; sourceTree = "<group>"; };
+		BD0125B132A16F9A260ACDA51D4D4D9E /* Pods-WatchCommunicator WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchCommunicator WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		BDFB664CF5AA41591C31BD9BC125FCD2 /* ObjcExceptionBridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjcExceptionBridging.h; path = Sources/ObjcExceptionBridging/include/ObjcExceptionBridging.h; sourceTree = "<group>"; };
+		C032982050BFEF4B13F0CB960E639BBA /* XCGLogger-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCGLogger-watchOS-prefix.pch"; path = "../XCGLogger-watchOS/XCGLogger-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		C4B97D3E006ED929489364BFEE5ADDFB /* Pods-WatchCommunicator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchCommunicator-umbrella.h"; sourceTree = "<group>"; };
+		C75B8A32C15E5FB1D8C6F7716565C2E6 /* Pods-WatchCommunicatorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WatchCommunicatorTests-umbrella.h"; sourceTree = "<group>"; };
+		CAC3A9052B53E6AA03D2164700BAB950 /* Pods-WatchCommunicatorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchCommunicatorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D1F1AD9D449607489CB179D82DACAB50 /* ConsoleDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleDestination.swift; path = Sources/XCGLogger/Destinations/ConsoleDestination.swift; sourceTree = "<group>"; };
+		D3ABE2CECDC721B625E1C73AB27AFFAB /* LogDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogDetails.swift; path = Sources/XCGLogger/Misc/LogDetails.swift; sourceTree = "<group>"; };
+		D658C01DDE714F750EBED14BB006DD27 /* ObjectiveCMarker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectiveCMarker.m; path = Sources/ObjcExceptionBridging/ObjectiveCMarker.m; sourceTree = "<group>"; };
+		D6BB9A64A91E96FF264914773160D593 /* Pods_WatchCommunicator_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WatchCommunicator_WatchKit_Extension.framework; path = "Pods-WatchCommunicator WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB90DFBDCF0ADCD97DF1E9192C117D83 /* .swift-version */ = {isa = PBXFileReference; includeInIndex = 1; path = ".swift-version"; sourceTree = "<group>"; };
+		DD186645B09BA1F4285869ACA8F1F23E /* Pods-WatchCommunicator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WatchCommunicator.modulemap"; sourceTree = "<group>"; };
+		E03443D73A489786C7573559F1E3FD22 /* ANSIColorLogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANSIColorLogFormatter.swift; path = Sources/XCGLogger/LogFormatters/ANSIColorLogFormatter.swift; sourceTree = "<group>"; };
+		EA71C634816800051D8184F50C4410F9 /* ObjcExceptionBridging-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "ObjcExceptionBridging-iOS.modulemap"; sourceTree = "<group>"; };
+		EFF86C514AF8D9A001243F5B90BF89BF /* XCGLogger-watchOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "XCGLogger-watchOS-Info.plist"; path = "../XCGLogger-watchOS/XCGLogger-watchOS-Info.plist"; sourceTree = "<group>"; };
+		F06266A12CD4CE34A0A452719F31B253 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjcExceptionBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07D5FF1855ECA0EEB770C1D96340F65 /* ObjcExceptionBridging-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjcExceptionBridging-iOS-dummy.m"; sourceTree = "<group>"; };
+		F3975FE372D0DBBB3EEE951232F6098A /* Base64LogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64LogFormatter.swift; path = Sources/XCGLogger/LogFormatters/Base64LogFormatter.swift; sourceTree = "<group>"; };
+		F750E5B4AAE54ED96E67B70E3E230D94 /* Pods-WatchCommunicatorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WatchCommunicatorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FEA5C9A5BCD6A0536B051BACAE87F2A6 /* Pods-WatchCommunicator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WatchCommunicator-Info.plist"; sourceTree = "<group>"; };
+		FFFCA5C4A4022028C3D67C065369046C /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XCGLogger.framework; path = "XCGLogger-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13AF1E31D8C06B3512D405FA35E20B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515C9EDA1EF30D1F769E28AF00825E99 /* Foundation.framework in Frameworks */,
+				870876E0242EF30C7D8E90E8F17A85B9 /* ObjcExceptionBridging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F930C78B6BB4DD2131532F71171B709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A857736A4B06DAFA3C79D1356F188DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420ACD83F5FD5F0CE06564D62E79203B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E607F8CDBEAED0E7B0D235D7C558DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		616EDB272D60CA0385E38DE257C94B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6257F272BE9E0D28ECF35BC5878D2AB6 /* Foundation.framework in Frameworks */,
+				7FA2E2E8C433A775A4E4057FEE0559DA /* ObjcExceptionBridging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD8991D9801655C1EC98159E911F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391F3AFA27716AB3A352A95F172F153B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AADB851BFD81E281A18D83E4B9292EDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47FF81FE0769BDDB6A4B9B964F73096 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7992D6D9F6D197275181DCCDC9D1C89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB34CA1A599BDE5A524CF3E11B356679 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01EE535589CA95D6630A1600A767D5D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB90DFBDCF0ADCD97DF1E9192C117D83 /* .swift-version */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		020399590EE622F331A7384AE21B876D /* ObjcExceptionBridging */ = {
+			isa = PBXGroup;
+			children = (
+				1E846C457ADE85434C3CB1735D580F32 /* ObjcExceptionBridging */,
+				95AFBEBA116BD50D2DFE1C4D7A176682 /* Support Files */,
+			);
+			name = ObjcExceptionBridging;
+			path = ObjcExceptionBridging;
+			sourceTree = "<group>";
+		};
+		0379C18D4C75C8CD53F4D300CED16ECB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1062EB83FE4BA7A14899A766A2703DF4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1C74030D314527A43B42B48A86E24F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06266A12CD4CE34A0A452719F31B253 /* ObjcExceptionBridging.framework */,
+				0379C18D4C75C8CD53F4D300CED16ECB /* iOS */,
+				BC3662E4B9A8F7D70B5F7A2191417A4F /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E846C457ADE85434C3CB1735D580F32 /* ObjcExceptionBridging */ = {
+			isa = PBXGroup;
+			children = (
+				BDFB664CF5AA41591C31BD9BC125FCD2 /* ObjcExceptionBridging.h */,
+				D658C01DDE714F750EBED14BB006DD27 /* ObjectiveCMarker.m */,
+			);
+			name = ObjcExceptionBridging;
+			sourceTree = "<group>";
+		};
+		4B833E8E02094EEF33B2BAB05B490212 /* XCGLogger */ = {
+			isa = PBXGroup;
+			children = (
+				7F9EBCE1259721E06925A4D13329BCFC /* Core */,
+				FFC2DDEF5841E89C77A3349A4B27E1A1 /* Support Files */,
+			);
+			name = XCGLogger;
+			path = XCGLogger;
+			sourceTree = "<group>";
+		};
+		507E8BCDD0EFCD6656D23B9C68AFB73A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69278AD30822E658F902E7B01E6CB844 /* Pods-WatchCommunicator */,
+				61BAF025829EF2E8D61F13DA14E480BE /* Pods-WatchCommunicator WatchKit Extension */,
+				9D7D861F3DEF55894DA1D986BD81E542 /* Pods-WatchCommunicatorTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		61BAF025829EF2E8D61F13DA14E480BE /* Pods-WatchCommunicator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				01827F86B1AD3897923915E654C40791 /* Pods-WatchCommunicator WatchKit Extension.modulemap */,
+				8B9768ACCA0CAED20CC38603D5DE6A91 /* Pods-WatchCommunicator WatchKit Extension-acknowledgements.markdown */,
+				BD0125B132A16F9A260ACDA51D4D4D9E /* Pods-WatchCommunicator WatchKit Extension-acknowledgements.plist */,
+				2E0CB850EE40E61887CB06290F8D4BDA /* Pods-WatchCommunicator WatchKit Extension-dummy.m */,
+				A942633A0B922D05280E3E2FA26B3610 /* Pods-WatchCommunicator WatchKit Extension-frameworks.sh */,
+				82E36B4FBBB08055714454E0C2E1F8F8 /* Pods-WatchCommunicator WatchKit Extension-Info.plist */,
+				87350FAD5659301E6D73FCF0D1D8B5D8 /* Pods-WatchCommunicator WatchKit Extension-umbrella.h */,
+				A4295D124F9971C5B4F55AD9459B8C5C /* Pods-WatchCommunicator WatchKit Extension.debug.xcconfig */,
+				5294C54DD88C0C7A8C919FEC989111CB /* Pods-WatchCommunicator WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-WatchCommunicator WatchKit Extension";
+			path = "Target Support Files/Pods-WatchCommunicator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		69278AD30822E658F902E7B01E6CB844 /* Pods-WatchCommunicator */ = {
+			isa = PBXGroup;
+			children = (
+				DD186645B09BA1F4285869ACA8F1F23E /* Pods-WatchCommunicator.modulemap */,
+				0DB47FE3465B53ABAFA9C4492C6053CE /* Pods-WatchCommunicator-acknowledgements.markdown */,
+				1A238ACB715D4FDEDC07C0A6ECDF3AD0 /* Pods-WatchCommunicator-acknowledgements.plist */,
+				ABC1C3E6349CEBAE4B0793E630FCD0BE /* Pods-WatchCommunicator-dummy.m */,
+				6AEA7851D70E8AFE780327C53A1EB058 /* Pods-WatchCommunicator-frameworks.sh */,
+				FEA5C9A5BCD6A0536B051BACAE87F2A6 /* Pods-WatchCommunicator-Info.plist */,
+				C4B97D3E006ED929489364BFEE5ADDFB /* Pods-WatchCommunicator-umbrella.h */,
+				6269D0B0573ABA6EF659C14B29C82D0C /* Pods-WatchCommunicator.debug.xcconfig */,
+				7C8FC2D0ECBBF0EE3537B5B08274FC5D /* Pods-WatchCommunicator.release.xcconfig */,
+			);
+			name = "Pods-WatchCommunicator";
+			path = "Target Support Files/Pods-WatchCommunicator";
+			sourceTree = "<group>";
+		};
+		710053579FF46B9FC93FDA68C0D236D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9224FD50E3EC906E6F12D27CBF2D7B26 /* ObjcExceptionBridging.framework */,
+				142D9488380264829C992D4C0B1ACB99 /* ObjcExceptionBridging.framework */,
+				308F7D63607095CA8959BBCD46BCA747 /* Pods_WatchCommunicator.framework */,
+				D6BB9A64A91E96FF264914773160D593 /* Pods_WatchCommunicator_WatchKit_Extension.framework */,
+				3D1F73F4107F42753987AA8741E84936 /* Pods_WatchCommunicatorTests.framework */,
+				FFFCA5C4A4022028C3D67C065369046C /* XCGLogger.framework */,
+				110D5D37BEABBB6EE46E250F3FC9D0BD /* XCGLogger.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71B1CCC8591067075F9135B3F730B2A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				020399590EE622F331A7384AE21B876D /* ObjcExceptionBridging */,
+				4B833E8E02094EEF33B2BAB05B490212 /* XCGLogger */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F9EBCE1259721E06925A4D13329BCFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E03443D73A489786C7573559F1E3FD22 /* ANSIColorLogFormatter.swift */,
+				3587938E792A0C7D50D20A4418E17AEF /* AppleSystemLogDestination.swift */,
+				2CE25D7D9282ACA452303425E21A93B2 /* AutoRotatingFileDestination.swift */,
+				F3975FE372D0DBBB3EEE951232F6098A /* Base64LogFormatter.swift */,
+				2BFF58A7F783C47BC9AC0E6749A0CABD /* BaseDestination.swift */,
+				656211EAF04C882BA6737AB9252DB025 /* BaseQueuedDestination.swift */,
+				D1F1AD9D449607489CB179D82DACAB50 /* ConsoleDestination.swift */,
+				B90493486CDC7418D0F8BC7CA2D4DD05 /* DestinationProtocol.swift */,
+				4A3E09CE22648D0E3348345363DF6B5B /* DevFilter.swift */,
+				3367EF0BCA9AFD01CADE56FB8C6967E9 /* DispatchQueue+XCGAdditions.swift */,
+				6809EBE9FB819A6445A55FFB7757E4E5 /* FileDestination.swift */,
+				327E625043F131B291076F9D071C27B1 /* FileNameFilter.swift */,
+				6D4F74F76649E56AC73C82AE92B8EFC0 /* FilterProtocol.swift */,
+				0828364ACC5DD5CB57F82D0087625D9B /* HelperFunctions.swift */,
+				D3ABE2CECDC721B625E1C73AB27AFFAB /* LogDetails.swift */,
+				9FD1610997BBD9E7556176B8C1500494 /* LogFormatterProtocol.swift */,
+				7F29A92FCE7CA4B3AE2E2CE8977AC979 /* PrePostFixLogFormatter.swift */,
+				B9964D02C358740466C86978C3C57294 /* TagFilter.swift */,
+				7281AD8621002B694091834B55F50CC8 /* TestDestination.swift */,
+				AD9EF67761C2442792F4CC21E48E9357 /* URL+XCGAdditions.swift */,
+				4D7FEC71ABEF26CC5C9642FC1FFFB8EC /* UserInfoFilter.swift */,
+				02D7B1FB23010D2572423A5738F73B3C /* XCGLogger.swift */,
+				A18D933CDBE0090FC51E2BA2A6B1B60C /* XcodeColorsLogFormatter.swift */,
+				01EE535589CA95D6630A1600A767D5D0 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		95AFBEBA116BD50D2DFE1C4D7A176682 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA71C634816800051D8184F50C4410F9 /* ObjcExceptionBridging-iOS.modulemap */,
+				F07D5FF1855ECA0EEB770C1D96340F65 /* ObjcExceptionBridging-iOS-dummy.m */,
+				94734F6E4B95A30AC24F5841BE31EEAB /* ObjcExceptionBridging-iOS-Info.plist */,
+				B230367821B777ED1260A4ED3DEB0521 /* ObjcExceptionBridging-iOS-prefix.pch */,
+				63195C5B2B40EC62E52C9326513DB61A /* ObjcExceptionBridging-iOS-umbrella.h */,
+				2CEEDAA6D4EA39AD5B531D34D4ADB005 /* ObjcExceptionBridging-iOS.debug.xcconfig */,
+				8442D41F79B3A9F1378D2E2ADE6EDE19 /* ObjcExceptionBridging-iOS.release.xcconfig */,
+				84858D2C1F7E4E57D49C582D7FD3FBCB /* ObjcExceptionBridging-watchOS.modulemap */,
+				4108276DFDDBBDFBD0ADF4AE757F62C0 /* ObjcExceptionBridging-watchOS-dummy.m */,
+				4F2C0D03D5B6F0F00880DB24EADA4D3F /* ObjcExceptionBridging-watchOS-Info.plist */,
+				65FA2A5551635A52EDBC515711916B75 /* ObjcExceptionBridging-watchOS-prefix.pch */,
+				70648BC4D509B6C605A7BBEB90571D62 /* ObjcExceptionBridging-watchOS-umbrella.h */,
+				5DDBE9DD3AD67E3BDEB77D4E75F3EF50 /* ObjcExceptionBridging-watchOS.debug.xcconfig */,
+				73682A6FA713DEBF2F19BBF81A938EC3 /* ObjcExceptionBridging-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjcExceptionBridging-iOS";
+			sourceTree = "<group>";
+		};
+		9D7D861F3DEF55894DA1D986BD81E542 /* Pods-WatchCommunicatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				09492AE9E7B49C44DD21A0847073D47D /* Pods-WatchCommunicatorTests.modulemap */,
+				F750E5B4AAE54ED96E67B70E3E230D94 /* Pods-WatchCommunicatorTests-acknowledgements.markdown */,
+				CAC3A9052B53E6AA03D2164700BAB950 /* Pods-WatchCommunicatorTests-acknowledgements.plist */,
+				30976DC2145228C73F9A6CCA975BD2C1 /* Pods-WatchCommunicatorTests-dummy.m */,
+				7FD8BAA8BD5EA592B4DA448F3EA2D6FA /* Pods-WatchCommunicatorTests-Info.plist */,
+				C75B8A32C15E5FB1D8C6F7716565C2E6 /* Pods-WatchCommunicatorTests-umbrella.h */,
+				072F9BF8F613A7BFCD0D4C3D268FF491 /* Pods-WatchCommunicatorTests.debug.xcconfig */,
+				AB90677F2C93C0359978AA3568F7ABCC /* Pods-WatchCommunicatorTests.release.xcconfig */,
+			);
+			name = "Pods-WatchCommunicatorTests";
+			path = "Target Support Files/Pods-WatchCommunicatorTests";
+			sourceTree = "<group>";
+		};
+		BC3662E4B9A8F7D70B5F7A2191417A4F /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				33348ACCBF2DFB97634B6AB9164E557A /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1C74030D314527A43B42B48A86E24F4A /* Frameworks */,
+				71B1CCC8591067075F9135B3F730B2A1 /* Pods */,
+				710053579FF46B9FC93FDA68C0D236D5 /* Products */,
+				507E8BCDD0EFCD6656D23B9C68AFB73A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FFC2DDEF5841E89C77A3349A4B27E1A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59ACDFB91792808666B7DF4966D0B848 /* XCGLogger-iOS.modulemap */,
+				216D2ADF44096085F2DCC361AAF6269D /* XCGLogger-iOS-dummy.m */,
+				BAC59308E249B7EEB57E6FDD8C653EE5 /* XCGLogger-iOS-Info.plist */,
+				BCB125C9A6E87F292D66D88C0C302B7A /* XCGLogger-iOS-prefix.pch */,
+				2F645C22B5C8D327B409313E2CE41050 /* XCGLogger-iOS-umbrella.h */,
+				73AC4C622E1B658D036A2978E218806D /* XCGLogger-iOS.debug.xcconfig */,
+				3055AD6D0C9D4CE6C7BF80F2489BC25A /* XCGLogger-iOS.release.xcconfig */,
+				9CC209BF370C023C78EC3F3DD394715F /* XCGLogger-watchOS.modulemap */,
+				688ED5C12D9CDF93FF5ED0191E3D742E /* XCGLogger-watchOS-dummy.m */,
+				EFF86C514AF8D9A001243F5B90BF89BF /* XCGLogger-watchOS-Info.plist */,
+				C032982050BFEF4B13F0CB960E639BBA /* XCGLogger-watchOS-prefix.pch */,
+				486FAC5BA63DBBA9DA7BA40A3928AB4D /* XCGLogger-watchOS-umbrella.h */,
+				76E25487CF31E4D60AC21F5012BFF0C9 /* XCGLogger-watchOS.debug.xcconfig */,
+				A429C24465D05090E6E33FCD4277B438 /* XCGLogger-watchOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XCGLogger-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C021B55699FEEBBAFDA5FA8622EDC44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECBCD4601329B8154F8A236DD131AB4 /* Pods-WatchCommunicator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D1B202A068581A7AAA4A39FAFB7F69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4DBA37463E04D6BA8DFEE09901472F6 /* ObjcExceptionBridging-watchOS-umbrella.h in Headers */,
+				B47A9B39B010C1A453067DF9D033C202 /* ObjcExceptionBridging.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5804A1E1BF1E8403BE750F4DAAE287E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C42902C7F322D8DCF1A3CF9C1EE4DC /* Pods-WatchCommunicatorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8181BADB5271C534BD7CC3514F077C50 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48D0B0D308F0E007F9269BCA1446A4D6 /* Pods-WatchCommunicator WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C097E637EBC6D4CF4004AB013C90F8A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4024A69DA2944777FE30C963E29D6884 /* XCGLogger-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81801B97F9474FEBCB31F29253CB79C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE3FF5E8955C2FDF33B1A2C90767E9E /* ObjcExceptionBridging-iOS-umbrella.h in Headers */,
+				450E6E35C820DB8A0D2B28E8C420EACB /* ObjcExceptionBridging.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2016EAEF9F3335B87A3B66E69B5294E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709A6FB7D640477ECD912E8968A87324 /* XCGLogger-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01944EEBB25479D57F9107F178A3DB12 /* Pods-WatchCommunicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D0B407E960297DB7B72C6A6A7C9C02 /* Build configuration list for PBXNativeTarget "Pods-WatchCommunicator" */;
+			buildPhases = (
+				1C021B55699FEEBBAFDA5FA8622EDC44 /* Headers */,
+				E1203E87140630C2A721A495AA484AAE /* Sources */,
+				1F930C78B6BB4DD2131532F71171B709 /* Frameworks */,
+				0202DF0E842A4D75240315DC21F01D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94FBE323BDCAD2048314E9C7C42979FF /* PBXTargetDependency */,
+				7C23F139CAF58881F65A5A3C0F5A561E /* PBXTargetDependency */,
+			);
+			name = "Pods-WatchCommunicator";
+			productName = "Pods-WatchCommunicator";
+			productReference = 308F7D63607095CA8959BBCD46BCA747 /* Pods_WatchCommunicator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0EEDB380865208C7ED61299DBA4866C7 /* Pods-WatchCommunicator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F385B0C6DBBEDA44B89ECE3E43A4E3A8 /* Build configuration list for PBXNativeTarget "Pods-WatchCommunicator WatchKit Extension" */;
+			buildPhases = (
+				8181BADB5271C534BD7CC3514F077C50 /* Headers */,
+				1E2DF9300A6C0CB624E77C456979D82A /* Sources */,
+				AADB851BFD81E281A18D83E4B9292EDC /* Frameworks */,
+				43E0B1E8390E732EF09B50D54484A926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE8F5B55D2E421E7CF1C0397B7A84C2 /* PBXTargetDependency */,
+				370F4ACEFC27DAF13D9582370953A7D4 /* PBXTargetDependency */,
+			);
+			name = "Pods-WatchCommunicator WatchKit Extension";
+			productName = "Pods-WatchCommunicator WatchKit Extension";
+			productReference = D6BB9A64A91E96FF264914773160D593 /* Pods_WatchCommunicator_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		561E34D43E5F287C1307C6F7AEA4781E /* ObjcExceptionBridging-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E171EFF47FE4C0D14A8B3079B87D5EA /* Build configuration list for PBXNativeTarget "ObjcExceptionBridging-iOS" */;
+			buildPhases = (
+				B81801B97F9474FEBCB31F29253CB79C /* Headers */,
+				17BD687E88E68EDB64D1E86780067D0A /* Sources */,
+				C7992D6D9F6D197275181DCCDC9D1C89 /* Frameworks */,
+				DF65B6B43A1D9B8B45DD8E24D4584169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjcExceptionBridging-iOS";
+			productName = "ObjcExceptionBridging-iOS";
+			productReference = 9224FD50E3EC906E6F12D27CBF2D7B26 /* ObjcExceptionBridging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		782428077BA9EE10A546CAADD5C4560D /* ObjcExceptionBridging-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF0A59290813E9373DB7105DD6413E10 /* Build configuration list for PBXNativeTarget "ObjcExceptionBridging-watchOS" */;
+			buildPhases = (
+				36D1B202A068581A7AAA4A39FAFB7F69 /* Headers */,
+				6759D1342C581F3BBB881FC92D02AFAC /* Sources */,
+				6DFD8991D9801655C1EC98159E911F2D /* Frameworks */,
+				4624093041243503F7758DB89836EDAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ObjcExceptionBridging-watchOS";
+			productName = "ObjcExceptionBridging-watchOS";
+			productReference = 142D9488380264829C992D4C0B1ACB99 /* ObjcExceptionBridging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8D94B634100CAE0F33E40E5ED1D68861 /* XCGLogger-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB5F2F0EBB8FD215A585D7C618D1CF97 /* Build configuration list for PBXNativeTarget "XCGLogger-watchOS" */;
+			buildPhases = (
+				F2016EAEF9F3335B87A3B66E69B5294E /* Headers */,
+				6EA04A3A38B59DFD27A066AC7CD3297B /* Sources */,
+				616EDB272D60CA0385E38DE257C94B9D /* Frameworks */,
+				D2EFC53848FEB6534CDC3B40B3F1EF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94588426910D7942BDA2553892DBA152 /* PBXTargetDependency */,
+			);
+			name = "XCGLogger-watchOS";
+			productName = "XCGLogger-watchOS";
+			productReference = 110D5D37BEABBB6EE46E250F3FC9D0BD /* XCGLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A66DEB7B8674504C783A91066DA2F78D /* Pods-WatchCommunicatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834AD10951FCAFA8A7F5E46362B38F66 /* Build configuration list for PBXNativeTarget "Pods-WatchCommunicatorTests" */;
+			buildPhases = (
+				5804A1E1BF1E8403BE750F4DAAE287E0 /* Headers */,
+				8DFA509CCCC077ABA3EBDCE4A5F9DBAE /* Sources */,
+				420ACD83F5FD5F0CE06564D62E79203B /* Frameworks */,
+				16D1CB30AF7CC4076AE510D4FCD7CECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				531962FA2ECE4C966A0C49A0C023573F /* PBXTargetDependency */,
+			);
+			name = "Pods-WatchCommunicatorTests";
+			productName = "Pods-WatchCommunicatorTests";
+			productReference = 3D1F73F4107F42753987AA8741E84936 /* Pods_WatchCommunicatorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D50E171D729A216CE7335A7B375CE67A /* XCGLogger-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004F06A0155DF0BC42A8CAAC7B17E5BC /* Build configuration list for PBXNativeTarget "XCGLogger-iOS" */;
+			buildPhases = (
+				8C097E637EBC6D4CF4004AB013C90F8A /* Headers */,
+				091001DCC3CFFA29B17885D4B737D304 /* Sources */,
+				13AF1E31D8C06B3512D405FA35E20B70 /* Frameworks */,
+				59FC24B0352D675003E202BC96C6F3CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B8C5DF4C276A8484CCB58FA97FAF8C6 /* PBXTargetDependency */,
+			);
+			name = "XCGLogger-iOS";
+			productName = "XCGLogger-iOS";
+			productReference = FFFCA5C4A4022028C3D67C065369046C /* XCGLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 710053579FF46B9FC93FDA68C0D236D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				561E34D43E5F287C1307C6F7AEA4781E /* ObjcExceptionBridging-iOS */,
+				782428077BA9EE10A546CAADD5C4560D /* ObjcExceptionBridging-watchOS */,
+				01944EEBB25479D57F9107F178A3DB12 /* Pods-WatchCommunicator */,
+				0EEDB380865208C7ED61299DBA4866C7 /* Pods-WatchCommunicator WatchKit Extension */,
+				A66DEB7B8674504C783A91066DA2F78D /* Pods-WatchCommunicatorTests */,
+				D50E171D729A216CE7335A7B375CE67A /* XCGLogger-iOS */,
+				8D94B634100CAE0F33E40E5ED1D68861 /* XCGLogger-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0202DF0E842A4D75240315DC21F01D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D1CB30AF7CC4076AE510D4FCD7CECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43E0B1E8390E732EF09B50D54484A926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4624093041243503F7758DB89836EDAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59FC24B0352D675003E202BC96C6F3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DC121E53988165690A7A9EED0577F6A /* .swift-version in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EFC53848FEB6534CDC3B40B3F1EF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A6AB8164D28F452CBB39FD93C1B5BB /* .swift-version in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF65B6B43A1D9B8B45DD8E24D4584169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		091001DCC3CFFA29B17885D4B737D304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439E69E1D538F2F53AC95E16FA285E46 /* ANSIColorLogFormatter.swift in Sources */,
+				2BA88FFF6005F7BA2F90B5F5AF3AA286 /* AppleSystemLogDestination.swift in Sources */,
+				1FD5AC673A03F14769ADC475F762DD22 /* AutoRotatingFileDestination.swift in Sources */,
+				6499778ABC5E77F83C63EA320F61DF1F /* Base64LogFormatter.swift in Sources */,
+				979993B9118670333169F2F388230BD9 /* BaseDestination.swift in Sources */,
+				14E2247908705AE03FB9D859B0DD034A /* BaseQueuedDestination.swift in Sources */,
+				AA809971DA0B8D3C2308C6D8A8A57DC5 /* ConsoleDestination.swift in Sources */,
+				9BA632CD3D8C056D7072241F1F441852 /* DestinationProtocol.swift in Sources */,
+				9EE0CE52D6C2DAC414890B325E0A5B55 /* DevFilter.swift in Sources */,
+				C102F54205ED8D4B73C3458E4A025293 /* DispatchQueue+XCGAdditions.swift in Sources */,
+				9262C72B75067EF494083FD966A26787 /* FileDestination.swift in Sources */,
+				41FE45B0F8631EB6E0880398FC8C8980 /* FileNameFilter.swift in Sources */,
+				0A3A3FB3718EC8271F79496D87257EFC /* FilterProtocol.swift in Sources */,
+				D0D8767F8944F78A722BCB5D2FE9D831 /* HelperFunctions.swift in Sources */,
+				4766F40BED4AAFFF781EC19551F0BAF1 /* LogDetails.swift in Sources */,
+				98416192887B3F802BAFDD84322F9F14 /* LogFormatterProtocol.swift in Sources */,
+				5E0C2C1AF4903928939DDD3786F8B39B /* PrePostFixLogFormatter.swift in Sources */,
+				E0885056DA568606472A9D096D7CD97F /* TagFilter.swift in Sources */,
+				2058BFA9B0C260E2077903555E40D81D /* TestDestination.swift in Sources */,
+				D5BBA53505C5D47BBF0471559AD83830 /* URL+XCGAdditions.swift in Sources */,
+				26D8527D67CF36B95749F231A7BAD339 /* UserInfoFilter.swift in Sources */,
+				CFE4F7DC4DEE2BF2595E705A970B482D /* XCGLogger-iOS-dummy.m in Sources */,
+				7EB45938CD5E469ED474BC905E0C6CFB /* XCGLogger.swift in Sources */,
+				843C049D1987610A66191979B5498481 /* XcodeColorsLogFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17BD687E88E68EDB64D1E86780067D0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503AA079427B5FBA0D3F4465C092786F /* ObjcExceptionBridging-iOS-dummy.m in Sources */,
+				C470C84EC8D751B7B8FD1BA7CF4A6CF0 /* ObjectiveCMarker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E2DF9300A6C0CB624E77C456979D82A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAA0C760918DD1CC7A9B0B32AAA95EC /* Pods-WatchCommunicator WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6759D1342C581F3BBB881FC92D02AFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72828BEC90591BA462AECC9C998DDD62 /* ObjcExceptionBridging-watchOS-dummy.m in Sources */,
+				8EA9C090D47CE7C235AB6942F83BA70B /* ObjectiveCMarker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EA04A3A38B59DFD27A066AC7CD3297B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6468405C319F0B3B0498D178B3E5BF11 /* ANSIColorLogFormatter.swift in Sources */,
+				7831CA0421B5A8BD76153BE0F87D2005 /* AppleSystemLogDestination.swift in Sources */,
+				3D140A8BDB2508AE49B5EE6D3D9B3383 /* AutoRotatingFileDestination.swift in Sources */,
+				E90DF4236D0784684A356699CDACE948 /* Base64LogFormatter.swift in Sources */,
+				5D1DFA6C7380CBE7E764383725B966E5 /* BaseDestination.swift in Sources */,
+				C8BAE28E55CC48F1235DA1C4FBB724C0 /* BaseQueuedDestination.swift in Sources */,
+				F5231310FD6D1B547D405B0D1EF9FB05 /* ConsoleDestination.swift in Sources */,
+				83E99FF0D214E4CE43DED2BF7DED7339 /* DestinationProtocol.swift in Sources */,
+				6A60FB759CAE9E80F7CEDB2CBB9FFEB0 /* DevFilter.swift in Sources */,
+				C796A58CDAB30C531FE468741E65FFBE /* DispatchQueue+XCGAdditions.swift in Sources */,
+				C8623C5D24EE8F8637A0DBC207BB95BF /* FileDestination.swift in Sources */,
+				0D4F7C22285463A3853162721DA43515 /* FileNameFilter.swift in Sources */,
+				8DF31102D0FD77FD40BF14C17FDCEC4A /* FilterProtocol.swift in Sources */,
+				4C463EC4ED1AC4078EB6CBF40AD7B4D7 /* HelperFunctions.swift in Sources */,
+				B6A6818818FBF47CE02994C6F2EB5E89 /* LogDetails.swift in Sources */,
+				717664F60399E94CE289C1C8ABF04661 /* LogFormatterProtocol.swift in Sources */,
+				8FB0F9B9D4ADC3CD67F94A6ACFA00B97 /* PrePostFixLogFormatter.swift in Sources */,
+				201A17FB18744AD036C0E79443DB498B /* TagFilter.swift in Sources */,
+				72F3C28796CC1D3328BDD48634D3976B /* TestDestination.swift in Sources */,
+				E94269575B0C9E29AF2EF910997939BF /* URL+XCGAdditions.swift in Sources */,
+				9EA160E731940C89AC964E843F081D81 /* UserInfoFilter.swift in Sources */,
+				22CEC5027832D9B26E3949C4F91686F6 /* XCGLogger-watchOS-dummy.m in Sources */,
+				E4E60E78AA541F0D2618651D507F617F /* XCGLogger.swift in Sources */,
+				3BE4A6A4264C02BD77111F49B88E225F /* XcodeColorsLogFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFA509CCCC077ABA3EBDCE4A5F9DBAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72D2152AC0B9AD3B3739C896621A58F /* Pods-WatchCommunicatorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1203E87140630C2A721A495AA484AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFF89AF59A0C808F346394BD9C0F239 /* Pods-WatchCommunicator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		370F4ACEFC27DAF13D9582370953A7D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCGLogger-watchOS";
+			target = 8D94B634100CAE0F33E40E5ED1D68861 /* XCGLogger-watchOS */;
+			targetProxy = 13C84DA984C77F41103215652D7EEED5 /* PBXContainerItemProxy */;
+		};
+		3B8C5DF4C276A8484CCB58FA97FAF8C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjcExceptionBridging-iOS";
+			target = 561E34D43E5F287C1307C6F7AEA4781E /* ObjcExceptionBridging-iOS */;
+			targetProxy = E3461A60F467479CAC560368E1F21CC2 /* PBXContainerItemProxy */;
+		};
+		531962FA2ECE4C966A0C49A0C023573F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WatchCommunicator";
+			target = 01944EEBB25479D57F9107F178A3DB12 /* Pods-WatchCommunicator */;
+			targetProxy = 4D3E0F6095D4106A8386139D8DD1A440 /* PBXContainerItemProxy */;
+		};
+		5AE8F5B55D2E421E7CF1C0397B7A84C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjcExceptionBridging-watchOS";
+			target = 782428077BA9EE10A546CAADD5C4560D /* ObjcExceptionBridging-watchOS */;
+			targetProxy = EC6A0C1CD2D2E8FD73EDC970A7105739 /* PBXContainerItemProxy */;
+		};
+		7C23F139CAF58881F65A5A3C0F5A561E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XCGLogger-iOS";
+			target = D50E171D729A216CE7335A7B375CE67A /* XCGLogger-iOS */;
+			targetProxy = FCB81AEDF3C04519B65BB001EB12112A /* PBXContainerItemProxy */;
+		};
+		94588426910D7942BDA2553892DBA152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjcExceptionBridging-watchOS";
+			target = 782428077BA9EE10A546CAADD5C4560D /* ObjcExceptionBridging-watchOS */;
+			targetProxy = D701246D13C9643E5473A3F333F3BC3A /* PBXContainerItemProxy */;
+		};
+		94FBE323BDCAD2048314E9C7C42979FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjcExceptionBridging-iOS";
+			target = 561E34D43E5F287C1307C6F7AEA4781E /* ObjcExceptionBridging-iOS */;
+			targetProxy = 855C189866E82B1FCBBD36BA252421A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15FA68F92386B2B7349D07C3709D2961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5294C54DD88C0C7A8C919FEC989111CB /* Pods-WatchCommunicator WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchCommunicator WatchKit Extension/Pods-WatchCommunicator WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchCommunicator WatchKit Extension/Pods-WatchCommunicator WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		1A56CD0F5D1A575C5EAFC7B1105F67AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072F9BF8F613A7BFCD0D4C3D268FF491 /* Pods-WatchCommunicatorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchCommunicatorTests/Pods-WatchCommunicatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchCommunicatorTests/Pods-WatchCommunicatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1DCD664E24FF3CD62772EF0B61BB4C1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73AC4C622E1B658D036A2978E218806D /* XCGLogger-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger-iOS/XCGLogger-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCGLogger-iOS/XCGLogger-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XCGLogger-iOS/XCGLogger-iOS.modulemap";
+				PRODUCT_MODULE_NAME = XCGLogger;
+				PRODUCT_NAME = XCGLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44E412051ED7F7D99EAE01B951EFD4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		5F8AB556C22366EF0C2BB951A23AE1B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4295D124F9971C5B4F55AD9459B8C5C /* Pods-WatchCommunicator WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchCommunicator WatchKit Extension/Pods-WatchCommunicator WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchCommunicator WatchKit Extension/Pods-WatchCommunicator WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		620EDA3600AD1511D0E76EC263C533C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6269D0B0573ABA6EF659C14B29C82D0C /* Pods-WatchCommunicator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchCommunicator/Pods-WatchCommunicator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchCommunicator/Pods-WatchCommunicator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F82D40F28834F482947D738FFD5330E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB90677F2C93C0359978AA3568F7ABCC /* Pods-WatchCommunicatorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchCommunicatorTests/Pods-WatchCommunicatorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchCommunicatorTests/Pods-WatchCommunicatorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78A9F0A5353D3FA6FC25D6A2E9A036CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DDBE9DD3AD67E3BDEB77D4E75F3EF50 /* ObjcExceptionBridging-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = ObjcExceptionBridging;
+				PRODUCT_NAME = ObjcExceptionBridging;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		80CF39F7C8C987D2E5A33DBCDE52221A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEEDAA6D4EA39AD5B531D34D4ADB005 /* ObjcExceptionBridging-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjcExceptionBridging-iOS/ObjcExceptionBridging-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjcExceptionBridging-iOS/ObjcExceptionBridging-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjcExceptionBridging-iOS/ObjcExceptionBridging-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ObjcExceptionBridging;
+				PRODUCT_NAME = ObjcExceptionBridging;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95B2BB15E2B479FEF1DE8724E6413D30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8442D41F79B3A9F1378D2E2ADE6EDE19 /* ObjcExceptionBridging-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjcExceptionBridging-iOS/ObjcExceptionBridging-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjcExceptionBridging-iOS/ObjcExceptionBridging-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjcExceptionBridging-iOS/ObjcExceptionBridging-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ObjcExceptionBridging;
+				PRODUCT_NAME = ObjcExceptionBridging;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70C8680E2A7E64D0985838F2BB8C0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		B8757E595657E6F46DD02AC3112E4339 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3055AD6D0C9D4CE6C7BF80F2489BC25A /* XCGLogger-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger-iOS/XCGLogger-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCGLogger-iOS/XCGLogger-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XCGLogger-iOS/XCGLogger-iOS.modulemap";
+				PRODUCT_MODULE_NAME = XCGLogger;
+				PRODUCT_NAME = XCGLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEB39078C1BF4896C9ED4457D7FDC4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73682A6FA713DEBF2F19BBF81A938EC3 /* ObjcExceptionBridging-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ObjcExceptionBridging-watchOS/ObjcExceptionBridging-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = ObjcExceptionBridging;
+				PRODUCT_NAME = ObjcExceptionBridging;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		E87B5CE933A45F7AF48FCFC2055DBEA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A429C24465D05090E6E33FCD4277B438 /* XCGLogger-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger-watchOS/XCGLogger-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCGLogger-watchOS/XCGLogger-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XCGLogger-watchOS/XCGLogger-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = XCGLogger;
+				PRODUCT_NAME = XCGLogger;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		ED6F7962038AAB4EFA403523E092259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E25487CF31E4D60AC21F5012BFF0C9 /* XCGLogger-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XCGLogger-watchOS/XCGLogger-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XCGLogger-watchOS/XCGLogger-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/XCGLogger-watchOS/XCGLogger-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = XCGLogger;
+				PRODUCT_NAME = XCGLogger;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		EE5B6D61D71A737565C657CFC358069D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8FC2D0ECBBF0EE3537B5B08274FC5D /* Pods-WatchCommunicator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WatchCommunicator/Pods-WatchCommunicator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WatchCommunicator/Pods-WatchCommunicator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		004F06A0155DF0BC42A8CAAC7B17E5BC /* Build configuration list for PBXNativeTarget "XCGLogger-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DCD664E24FF3CD62772EF0B61BB4C1D /* Debug */,
+				B8757E595657E6F46DD02AC3112E4339 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E412051ED7F7D99EAE01B951EFD4EF /* Debug */,
+				A70C8680E2A7E64D0985838F2BB8C0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834AD10951FCAFA8A7F5E46362B38F66 /* Build configuration list for PBXNativeTarget "Pods-WatchCommunicatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A56CD0F5D1A575C5EAFC7B1105F67AE /* Debug */,
+				6F82D40F28834F482947D738FFD5330E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E171EFF47FE4C0D14A8B3079B87D5EA /* Build configuration list for PBXNativeTarget "ObjcExceptionBridging-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CF39F7C8C987D2E5A33DBCDE52221A /* Debug */,
+				95B2BB15E2B479FEF1DE8724E6413D30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB5F2F0EBB8FD215A585D7C618D1CF97 /* Build configuration list for PBXNativeTarget "XCGLogger-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6F7962038AAB4EFA403523E092259B /* Debug */,
+				E87B5CE933A45F7AF48FCFC2055DBEA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5D0B407E960297DB7B72C6A6A7C9C02 /* Build configuration list for PBXNativeTarget "Pods-WatchCommunicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620EDA3600AD1511D0E76EC263C533C6 /* Debug */,
+				EE5B6D61D71A737565C657CFC358069D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F385B0C6DBBEDA44B89ECE3E43A4E3A8 /* Build configuration list for PBXNativeTarget "Pods-WatchCommunicator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8AB556C22366EF0C2BB951A23AE1B9 /* Debug */,
+				15FA68F92386B2B7349D07C3709D2961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF0A59290813E9373DB7105DD6413E10 /* Build configuration list for PBXNativeTarget "ObjcExceptionBridging-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A9F0A5353D3FA6FC25D6A2E9A036CE /* Debug */,
+				DEB39078C1BF4896C9ED4457D7FDC4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

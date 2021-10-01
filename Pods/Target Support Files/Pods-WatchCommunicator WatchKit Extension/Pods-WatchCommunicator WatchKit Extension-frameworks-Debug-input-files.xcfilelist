@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-WatchCommunicator WatchKit Extension/Pods-WatchCommunicator WatchKit Extension-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging-watchOS/ObjcExceptionBridging.framework
+${BUILT_PRODUCTS_DIR}/XCGLogger-watchOS/XCGLogger.framework
