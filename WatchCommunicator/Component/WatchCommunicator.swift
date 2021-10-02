@@ -229,17 +229,17 @@ public class WatchCommunicator: NSObject {
     
     // MARK: - Public Methods and Properties
     
-    /// If you reachability changes from false to true, whether the applicationContext should be sent automatically
+    /// If your session activation state changes from to active, whether the applicationContext should be sent automatically
     var sendsApplicationContextAfterActivation: Bool = true
     
-    /// will be invoked on `completionQueue`.  This is the main property you will have to customize.
+    /// (TODO) *should* be invoked on `completionQueue`, but not currently.  This is the main property you will have to customize.  See Demo App for example implementation
     var messageHandler: ((_ incoming: WatchCommunicatorMessage) -> WatchCommunicatorMessage?) = {
         _ in
         logger.error("You haven't set a messageHandler value yet!")
         return nil
     }
     
-    /// basically the data that gets set to the property .jsonData on a WatchCommunicatorMessage, also the userInfo
+    /// Basically the data that gets set to the property .jsonData on a WatchCommunicatorMessage, also the userInfo
     var applicationContextAccessor: ((_ requestId: String?) -> WatchCommunicatorMessage) = { requestId in
         logger.error("You haven't set an applicationContextResponse value yet!")
         return WatchCommunicatorMessage.confirmationResponse(toMessageId: requestId, responseType: .applicationContext)
@@ -258,7 +258,7 @@ public class WatchCommunicator: NSObject {
         return saveURL
     }
     
-    /// for any method that requires a reply
+    /// For any message you want to send that requires a reply
     public func sendRequestMessage(_ message: WatchCommunicatorMessage, responseHandler: @escaping (_ result: WatchCommunicatorResult) -> Void) {
         
         guard didStartSession else {
@@ -434,6 +434,8 @@ extension WatchCommunicator {
         return responseMessage
     }
     
+    /// Because there are multiple 'transmission channels' and sometimes we send the applicationContext via a message, and not via transferApplicationContext, there are times
+    /// where the same message can get sent twice.  We ignore any duplicate message received, as it's id will indicate that.
     private func shouldProcess(_ message: WatchCommunicatorMessage) -> Bool {
         
         if self.messageHistory.contains(where: { (existing: WatchCommunicatorMessage, isIncoming: Bool) in
@@ -470,14 +472,15 @@ extension WatchCommunicator {
         self.trimHistory(messagesOlderThan: 60 * 60) // one hour
     }
     
+    /// Utility method to keep the history relatively short.
     private func trimHistory(messagesOlderThan ageInSeconds: TimeInterval) {
         messageHistory = messageHistory.filter({ entry in
             return abs(entry.message.timestamp.timeIntervalSinceNow) < ageInSeconds
         })
     }
     
-    public func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String: Any]) {
-        // handle receiving application context
+    public func session(_ session: WCSession,
+                        didReceiveApplicationContext applicationContext: [String: Any]) {
         
         // the context should have one key, value is data, which you convert to a WatchCommunicatorMessage
         guard let messageData = applicationContext[DictionaryKeys.messageData] as? Data else {
@@ -584,9 +587,8 @@ extension WatchCommunicator {
             fatalError("You should have transferred the file while including the message in the metadata")
         }
         
-        // convert
         // convert to WatchCommunicatorMessage
-        // we force try because WatchCommunicatorMessage should never fail decoding (if you are running unit tests...)
+        // we could force try because WatchCommunicatorMessage should never fail decoding (if you are running unit tests...)
         guard var message = try? self.decoder.decode(WatchCommunicatorMessage.self, from: messageData) else {
             logger.error("Received unexpected bad WatchCommunicatorMessage data.  Most likely only to happen during development.")
             return
@@ -597,8 +599,7 @@ extension WatchCommunicator {
             fatalError("The message you responded with did not have a requestMessageId set, and/or you didn't set its kind to .response")
         }
         
-        // According to the documentation, you have to move the file before this method returns
-
+        // According to this delegate method's documentation, you have to move the file before this method returns, otherwise it's discarded.
         let destinationURL = self.fileLocationMapper(file.fileURL)
         
         do {
@@ -696,11 +697,14 @@ extension WatchCommunicator {
     }
     
     // MARK: - Utility / Private Methods
+    
+    /// Suspends the Operation queue that has its request/response operations queued up, for cases where trying to send anything would fail.
     fileprivate func suspendQueue() {
         // consider also cancelling the current operation, or consider how to restart it, or set some state in it.
         self.operationQueue.isSuspended = true
     }
     
+    /// Resumes the Operation queue that has its request/response operations queued up, when the activation state is active and messages can be transmitted.
     fileprivate func resumeQueue() {
         self.operationQueue.isSuspended = false
     }
@@ -710,7 +714,7 @@ extension WatchCommunicator {
 
 extension WatchCommunicator {
     
-    /// You will have to cast the return value to the type you are expecting.  This is generally invoked by one of the Operation subclasses
+    /// You will have to cast the return value to the type you are expecting.  This is generally invoked by one of the Operation subclasses.  It is this method that deals with figuring out which 'communication channel' API to use.
     @discardableResult
     fileprivate func transmit(_ message: WatchCommunicatorMessage) -> Any? {
         
@@ -945,6 +949,7 @@ fileprivate extension Bool {
 }
 
 
+/// We let these Operation subclasses be responsible for dealing with responses and the associated handler.
 fileprivate class MessageOperation: Operation {
     
     let message: WatchCommunicatorMessage
@@ -1129,14 +1134,16 @@ fileprivate class MessageRequestOperation: MessageOperation {
 
 //MARK: - Helpers
 
-/// A way to track changes to a given parameter.  You initialize these with a value, then when they change, they will notify their single (if any) listener
+
 extension WatchCommunicator {
-    
+
+    /// A way to track changes to a given parameter.  You initialize these with a value, then when they change, they will notify their single (if any) listener
     class DynamicChangeOnNotifyingThread<Value: Equatable> {
         
         typealias Listener = (Value) -> ()
         var listener: Listener?
         
+        /// the DispatchQueue on which any changes (fire) are sent
         let notifyQueue: DispatchQueue
         
         init(_ value: Value, notifyQueue: DispatchQueue = .main) {

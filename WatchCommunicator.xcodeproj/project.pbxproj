@@ -136,7 +136,7 @@
 		D81F9D4826DF955100698566 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		D8345EC62678C36C00855C1C /* Logger-iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger-iOS.swift"; sourceTree = "<group>"; };
 		D8345EC82678C37600855C1C /* Logger-watchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger-watchOS.swift"; sourceTree = "<group>"; };
-		D8345ECA2678C3AA00855C1C /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
+		D8345ECA2678C3AA00855C1C /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D8345ECC2678C52D00855C1C /* ApplicationLogLevelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLogLevelFormatter.swift; sourceTree = "<group>"; };
 		D8345ECF2678C59400855C1C /* XCGLoggerSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCGLoggerSupport.swift; sourceTree = "<group>"; };
 		D8345ED22678C6B600855C1C /* WatchCommunicatorLogDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCommunicatorLogDestination.swift; sourceTree = "<group>"; };

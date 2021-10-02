@@ -7,15 +7,12 @@
 
 import Foundation
 
+/// A `WatchCommunicatorMessage` is the standardized form with which to transmit data between the Watch and the iPhone in your application.
+/// You generally can use the `static` methods that create messages, such as `WatchCommunicatorMessage.request(...)`, `WatchCommunicatorMessage.response(...)`, and `WatchCommunicatorMessage.confirmationResponse(...)` to instantiate a message.
+/// You'll likely want to write an extension that leverages the `userInfo` property to provide some context to your .`jsonData` value.  Typically, you could define a `contentType` in such an extension.  See the demo project's `WatchCommunicatorMessage+Application.swift` file for an example of that.
 public struct WatchCommunicatorMessage: Codable, Equatable, CustomDebugStringConvertible {
     
     public enum Kind: RawRepresentable, Codable, CustomDebugStringConvertible {
-        
-        struct Constants {
-            static let request = "Request"
-            static let notification = "Notification"
-            static let responseTo = "ResponseTo_"
-        }
         
         /// a message that expects a response
         case request
@@ -63,31 +60,41 @@ public struct WatchCommunicatorMessage: Codable, Equatable, CustomDebugStringCon
         
         // MARK: Conveniences
         
+        /// A notification is nothing more than a response that has no associated requestId (i.e. a fire and forget)
+        /// Convenience method that simplifies the case let syntax for you
         public var isNotification: Bool {
             if case .response(let requestId) = self, requestId == nil {
                 return true
             }
             return false
         }
+        /// Convenience method that simplifies the case let syntax for you
         public var isRequest: Bool {
             if case .request = self {
                 return true
             }
             return false
         }
+        /// Convenience method that simplifies the case let syntax for you
         public var isResponse: Bool {
             if case .response(let requestId) = self, requestId != nil {
                 return true
             }
             return false
         }
+        
+        struct Constants {
+            static let request = "Request"
+            static let notification = "Notification"
+            static let responseTo = "ResponseTo_"
+        }
     }
     
-    /// Indicates which aspect of a WCSession you want to use to transmit a message.  Note, if `isReachable` is true, it will always favour the `sendMessage(...)` APIs
+    /// Indicates which aspect of a `WCSession` you want to use to transmit a message.  Note, if `isReachable` is true, it will always favour the `sendMessage(...)` APIs
     public enum CommunicationChannel: Int, Codable, CustomDebugStringConvertible {
         /// send the message as an applicationContext update if the session is not reachable.
         case applicationContext
-        /// If you need to update your complication, you can use this channel to do it if `isReachable` is false
+        /// If you need to update your complication, you can use this channel to do it if `isReachable` is false, otherwise it gets send as a 'messageData'
         case complicationUserInfo
         /// send the message as a data message if possible, otherwise it gets sent over the userInfo channel.  Expect a response as a data message too
         case message
@@ -108,7 +115,7 @@ public struct WatchCommunicatorMessage: Codable, Equatable, CustomDebugStringCon
         }
     }
     
-    
+    /// keys for the `.userInfo` property that are used by `WatchCommunicator`.
     public struct UserInfoKey {
         static let fileURLPath = "fileURLPath"  // value is a String that you can use to create a local fileURL
         static let error = "error" // just provide anything as a value, otherwise there should be nothing present.
@@ -123,6 +130,7 @@ public struct WatchCommunicatorMessage: Codable, Equatable, CustomDebugStringCon
     /// In any case, the same approach should be used to creating your message.
     public let kind: Kind
     
+    /// indicates the preferred way of transferring the message if `.isReachable` is false.
     public let responseType: CommunicationChannel
     
     /// The time at which the message took place
@@ -136,9 +144,11 @@ public struct WatchCommunicatorMessage: Codable, Equatable, CustomDebugStringCon
         return requestId
     }
     
-    // you can provide a dictionary here to provide more context to your WatchCommunicatorMessage, such as how to interpret the jsonData
+    /// you can provide a dictionary here to provide more context to your `WatchCommunicatorMessage`, such as how to interpret the `.jsonData`
+    /// if you need to add your own key-value pairs, it is recommended to add to the current value of `.userInfo`.  (For an example, see the `isConfirmationOnly` accessor method implementation.
     public var userInfo: [String: String]
     
+    /// There is nothing preventing you using any data payload and you can configure your userInfo to indicate how you might interpret that data, but in general, it was conceived for you to use JSON-encoded Codable types here.
     public var jsonData: Data?
     
     /// You use this if you need to provide a response although you don't actually need to send anything back.
